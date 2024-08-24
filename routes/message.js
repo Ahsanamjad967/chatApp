@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
     res.status(500).json({ message: err.message });
   }
 });
-
+router.get('/ahsan',async (req,res)=>{res.send("hello hamza"});
 // Add a new message
 router.post('/', async (req, res) => {
   const message = new Message({
