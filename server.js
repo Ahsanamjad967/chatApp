@@ -42,5 +42,6 @@ io.on('connection', (socket) => {
 
 // Start the server
 server.listen(process.env.PORT, () => {
+  console.log(process.env.MONGO_URI)
   console.log(`Server running on http://localhost:${process.env.PORT}`);
 });
