@@ -13,7 +13,7 @@ app.use(express.json());
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "https://ahsanchatapp.up.railway.app/",  // React frontend URL
+    origin: "*",  // React frontend URL
     methods: ["GET", "POST"],
   },
 });
